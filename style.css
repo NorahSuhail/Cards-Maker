@@ -1,0 +1,176 @@
+/* Google Fonts*/
+@import url(./fonts/fonts.css);
+
+/* Genral CSS rules */
+header {
+    /* Header Background image */
+    background-image: url("images/joanna-kosinska-uGcDWKN91Fs-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Viaoda Libre', cursive;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #FDB827;
+    margin-bottom: 30px;
+}
+
+h5 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    color: #62760C;
+    margin-top: 30px;
+}
+/* Custimize CSS rules */
+/* Main Container*/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    width:100%;
+}
+
+.container > * {
+    flex: 1;
+}
+/* FORM */
+
+.form-container {
+    background-image: url("images/joanna-kosinska-bF2vsubyHcQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-horizontal{
+    font-family: 'Mukta', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 30px;
+}
+
+.form-horizontal > * {
+    flex: 1;
+}
+
+.form-horizontal .form-group {
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-control {
+    width: 50%;
+    margin: 5px;
+}
+
+.form-control:focus { 
+    border-color: #62760C;
+}
+
+.form-container label {
+    flex-grow: 2;
+    flex-shrink: 2;
+    font-family: 'Roboto Slab', serif;
+    color: #523906;
+}
+
+/* CARDS GALLERY */
+.gallery {
+    min-height: 30vh;
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 35%;
+    height: 50%;
+    padding: 5px;
+}
+
+/* BUTTONS */
+.mybtn {
+    margin: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #FFA41B;
+}
+
+/* Fill button styling */
+.fill {
+    padding: 5px;
+    border: 1px solid #523906;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+    width: 60px;
+    margin: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .fill::after {
+    content: "";
+    background-color: #62760C;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+    z-index: -1;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+/* End of Fill Button  */
+
+/* Footer CSS */
+  
+footer {
+    background-image: url("images/joanna-kosinska-uGcDWKN91Fs-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    padding: 2px;
+    width: 20px;
+}
+
+svg path:hover {
+    fill:#FDB827;
+}
+
+@media only screen and (max-width:480px) {
+
+}
