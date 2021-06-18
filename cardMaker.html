@@ -4,13 +4,17 @@
         <title>Cards Maker</title>
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="style.css">
+        <script src="./js/jquery-3.6.0.js"></script>
+        <script src="./js/html2canvas.js"></script>
+        <script src="./js/Canvas2Image.js"></script>
+        <script src="./js/jspdf.min.js"></script>
     </head>
     <body class="container">
         
 <!-- ---------- HEADER SECTION ---------- -->
         <header>                              
-            <h1 class="latter"> Cards Maker </h1>
-            <h3> Personalize your Greeting  Cards </h3>
+            <h1 class="latter">Cards Maker</h1>
+            <h3>Personalize your Greeting  Cards</h3>
         </header>
 
 <!-- ---------- MAIN SECTION ---------- -->       
@@ -33,35 +37,47 @@
 
     <!-- ---------- CARDS GALLERY SECTION ---------- -->
                 <div class="form-group">
-                    <label >Choose Card</label>
+                    <label >Choose Your Card</label>
                 </div>
-                <div class="form-group gallery">  
+
+                <div class="form-group gallery"> 
+
                     <img 
                         src="./images/cards/tamanna-rumee--MGIGlTpyLg-unsplash.jpg" 
-                        alt="card1"  id="card1" />
-      
+                        alt="card1" class="card" id="card1" onclick="chooseCard(this);" />
+ 
                     <img 
                         src="./images/cards/tamanna-rumee-AGIkqnQc9mU-unsplash.jpg" 
-                        alt="card2" id="card2" />
+                        alt="card2" class="card" id="card2" onclick="chooseCard(this);"/>
 
                     <img 
                         src="./images/cards/tamanna-rumee-1kvIMyq-5Bo-unsplash.jpg"
-                        alt="card3" id="card3" />
-
-                    <img 
-                        src="./images/cards/tamanna-rumee-VY1pj_9DCxE-unsplash.jpg" 
-                        alt="card4" id="card4" />
+                        alt="card3" class="card" id="card3" onclick="chooseCard(this);"/> 
 
                     <img 
                         src="./images/cards/tamanna-rumee-x5fT5ZMfRDs-unsplash.jpg" 
-                        alt="card5" id="card5" />
+                        alt="card4" class="card" id="card4" onclick="chooseCard(this);"/>
 
+                    <img 
+                        src="./images/cards/tamanna-rumee-VY1pj_9DCxE-unsplash.jpg" 
+                        alt="card5" class="card" id="card5" onclick="chooseCard(this);"/>
                 </div>
+
+                <div class="chosen-container" id="theImage">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div class="text-block">
+                        <h2></h2>
+                        <h3></h3>
+                    </div>
+                </div>
+                <a id="download"></a>
+
 <!-- ---------- BUTTONS SECTION ---------- -->  
                 <div class="form-group">
 
-                    <button type="button" class="mybtn fill">Save</button>
-                    <button type="button" class="mybtn fill">Reset</button>
+                    <button type="button" class="mybtn fill" id="save">Save</button>
+                    <button type="button" class="mybtn fill" id="reset">Reset</button>
                     
                 </div>  
             </div> 
@@ -92,8 +108,17 @@
             </div>
 
         </footer>
-    </body>
-<!-- ---------- CARDS MAKER FUNCTIONALITIES SECTION ---------- -->  
-    <script src="./card-maker.js"></script>
 
+    </body>
+<!-- ---------- CARDS MAKER FUNCTIONALITIES SECTION ---------- -->   
+    <script src="./card-maker.js"></script>
+    <script>
+
+        function chooseCard(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+        }
+
+    </script>
 </html>

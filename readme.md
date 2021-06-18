@@ -13,7 +13,9 @@ This assessment was compleated as a part of [Olayan Group](https://www.olayan.co
 * You need to share the HTML & project assets files to work offline.
 
 ## Cards Maker Screenshots
-![Home Page](/screenshots/homepage.PNG)
+<img src="./images/captures/Capture1.PNG" alt="Home Page" width="400"/>
+<img src="./images/captures/Capture2.PNG" alt="Home Page" width="400"/>
+<img src="./images/captures/Capture3.PNG" alt="Home Page" width="400"/>
 
 ## Useful Links
 * Background by <a href="https://unsplash.com/@joannakosinska?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joanna Kosinska</a> on <a href="https://unsplash.com/s/photos/latters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -27,4 +29,3 @@ This assessment was compleated as a part of [Olayan Group](https://www.olayan.co
   
 ## Author
 Norah Suhail.
-
