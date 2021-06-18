@@ -26,6 +26,9 @@ This assessment was compleated as a part of [Olayan Group](https://www.olayan.co
 
 * Photo by <a href="https://unsplash.com/@the_capturedcollective?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Corey Collins</a> on <a href="https://unsplash.com/@jamietrinh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
-  
+## Note
+*To be able of downloading the cards you should run the web application from local server
+even though I didn't use any server side languages.*
+
 ## Author
 Norah Suhail.
