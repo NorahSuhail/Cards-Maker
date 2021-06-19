@@ -2,7 +2,7 @@
 This assessment was compleated as a part of [Olayan Group](https://www.olayan.com/) hiring process. 
 
 ## Building Tools
-* HTML, CSS Bootstrap, JavaScript, and Goodle Fonts.
+* HTML, CSS, Bootstrap, JavaScript, Canvas2Image library, html2canvas library, jspdf library and Google Fonts.
 
 ## Assessment Requirements
 * The page must be responsive design, full page view mode + mobile view mode.
